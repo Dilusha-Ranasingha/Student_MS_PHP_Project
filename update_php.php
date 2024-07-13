@@ -16,7 +16,8 @@ else
 
     if($con->query($sql))
     {
-        echo "Data Updated!";
+        //echo "Data Updated!";
+        header("Location:read.php");
     }
     else
     {
@@ -25,19 +26,3 @@ else
 }
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Update Data</title>
-</head>
-<body>
-    <button onclick="goToTable()">Go to Table</button>
-
-    <script>
-        function goToTable() {
-            window.location = 'read.php';
-        }
-    </script>
-</body>
-</html>

@@ -9,7 +9,8 @@ $sql = "INSERT INTO student1 VALUES ('','$studentName','$studentContact','$stude
 
 if($con->query($sql))
 {
-    echo "Insert Successful";
+    //echo "Insert Successful";
+    header("Location:read.php");
 }
 else{
     echo "Error".$con->error;
@@ -18,21 +19,3 @@ else{
 $con->close();
 
 ?>
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Manage Data</title>
-</head>
-<body>
-    <button onclick="goToTable()">Go to Table</button>
-
-    <script>
-        function goToTable() {
-            window.location = 'read.php';
-        }
-    </script>
-</body>
-</html>
