@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://live.staticflickr.com/1904/44968656544_20db2374d5_b.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1 {
+  color: #c00;
+  font-family: sans-serif;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+table {  
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+  padding: .25em .5em;
+  text-align: left;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  text-align: right;
+}
+
+td {
+  background-color: #eee;    
+}
+
+th {
+  background-color: #009;
+  color: #fff;
+}
+
+.zigzag {
+  border-collapse: separate;
+  border-spacing: .25em 1em;
+}
+
+.zigzag tbody tr:nth-child(odd) {
+  transform: rotate(2deg);
+}
+
+.zigzag thead tr,
+.zigzag tbody tr:nth-child(even) {
+  transform: rotate(-2deg);
+}
+
+.actionedit {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.actiondelete {
+  background-color: red;
+  color: white;
+  border: none;
+}

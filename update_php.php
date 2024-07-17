@@ -17,7 +17,9 @@ else
     if($con->query($sql))
     {
         //echo "Data Updated!";
-        header("Location:read.php");
+        //header("Location:read.php");
+        echo "<script>alert('Update Successful!');</script>";
+        echo "<script>window.location.href = 'read.php';</script>";
     }
     else
     {

@@ -1,24 +1,42 @@
 <head>
     <title>signup</title>
+    <link rel="stylesheet" href="./CSS/signupcss.css">
 </head>
 <body>
-    <fieldset>
-        <legend><b>SIGN-UP</b></legend>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        
         <form method="post" action="signup_php.php" id="signupForm" onsubmit="return validateForm();">
-            ID : <input type="text" disabled><br>
-            First Name : <input type="text" name="fname"><br>
-            Last Name : <input type="text" name="lname"><br>
-            Age : <input type="text" name="age"><br>
-            Date Of Birth : <input type="date" name="dob"><br>
-            Contact Number : <input type="text" name="contact"><br>
-            Email : <input type="email" name="email"><br>
-            Password : <input type="password" name="password"><br>
+            <h3>Sign up</h3>
+            <label for="username">ID</label>
+            <input type="text" placeholder="Enter the ID" disabled>
+
+            <label for="name">First Name</label>
+            <input type="text" placeholder="Enter the Name" name="fname">
+
+            <label for="contact">Last Name</label>
+            <input type="text" placeholder="Enter the Last Name" name="lname">
+
+            <label for="name">Age</label>
+            <input type="text" placeholder="Enter the Age" name="age">
+
+            <label for="name">Date Of Birth</label>
+            <input type="date" placeholder="Enter the Birthday" name="dob">
+
+            <label for="name">Contact</label>
+            <input type="text" placeholder="Enter the Contact" name="contact">
+
+            <label for="name">Email</label>
+            <input type="email" placeholder="Enter the Email" name="email">
+
+            <label for="name">Password</label>
+            <input type="password" placeholder="Enter own Password" name="password">
 
             <button type="submit" >Sign in</button>
-            <input type="reset">
 
         </form>
-    </fieldset>
     
     <script>
         function validateForm() {
@@ -73,6 +91,19 @@
             return true;
         }
     </script>
+
+    <!--navigation bar-->
+    <div class="navbar" style="background-color: #333; padding: 10px; position: fixed; top: 0; width: 100%; margin-top: 0px;">
+            <a href="home.php" style="color: white; text-decoration: none; margin-right: 10%; margin-left: 10%">Home</a>
+            <a href="signup.php" style="color: white; text-decoration: none; margin-right: 10%; margin-left: 10%">Add Admin</a>
+            <a href="login.php" style="color: white; text-decoration: none; margin-right: 10%; margin-left: 10%">Manage Student</a>
+            <a href="setting.php" style="color: white; text-decoration: none; margin-right: 10%; margin-left: 10%">Setting</a>
+    </div>
+
+    <!--footer section-->
+    <div class="footer" style="background-color: #333; color: white; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;">
+        This is the student management system 2024
+    </div>
     
 </body>
 </html>
