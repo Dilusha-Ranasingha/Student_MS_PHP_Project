@@ -10,7 +10,9 @@ $AdminEmail = $_POST["email"];
 $AdminPassword = $_POST["password"];
 
 
-$sql = "INSERT INTO admin1 VALUES ('','$AdminFName','$AdminLName','$AdminAge','$AdminDOB','$AdminContact','$AdminEmail','$AdminPassword')";
+$sql = "INSERT INTO admin1 (FName, LName, Age, Dob, Contact, Email, Password) 
+        VALUES ('$AdminFName', '$AdminLName', '$AdminAge', '$AdminDOB', '$AdminContact', '$AdminEmail', '$AdminPassword')";
+
 
 if($con->query($sql))
 {

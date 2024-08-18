@@ -1,6 +1,6 @@
 <?php
 
-$con=new mysqli("localhost","root","Nim@123","studentms","3308");
+$con=new mysqli("localhost","root","","studentms");
 
 if($con->connect_error)
 {
